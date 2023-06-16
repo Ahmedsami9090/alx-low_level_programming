@@ -12,7 +12,10 @@
 int main(void)
 {
 	int n;
-
+	
+	/**
+	 * Description: it a code that does somethings
+	*/
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n == 0)
