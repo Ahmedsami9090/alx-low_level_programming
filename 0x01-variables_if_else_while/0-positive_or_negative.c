@@ -2,20 +2,17 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * main - entry point
  *
- * Description: a program that prints some numbers
+ * Description: a program to print words
  *
- * return: always 0 (success)
+ * Return: 0 (success)
 */
 int main(void)
 {
 	int n;
-	
-	/**
-	 * Description: it a code that does somethings
-	*/
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n == 0)
