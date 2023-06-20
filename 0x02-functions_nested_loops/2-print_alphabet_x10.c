@@ -5,7 +5,7 @@
  *
  * Description: print alph 10 times
  *
- * Return: void 
+ * Return: void
 */
 
 void print_alphabet_x10(void)
