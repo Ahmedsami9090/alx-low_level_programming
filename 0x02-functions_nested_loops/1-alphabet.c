@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet - entry point
  *
- * Description: ggll
+ * Description: a program that do some printing
  *
  * Return: 0 (success)
 */
