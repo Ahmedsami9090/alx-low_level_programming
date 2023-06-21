@@ -3,8 +3,6 @@
 /**
  * main - entry point
  *
- * @i: function input
- *
  * Return: 0 success
 */
 
