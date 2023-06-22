@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_most-numbers - entry
+ * print_most_numbers - entry point
  *
- * Description: some code
+ * Description:a function that print some numbers
  *
- * Return: no clue
+ * Return: numbers from 0 to 9
 */
 
 void print_most_numbers(void)
@@ -18,7 +18,7 @@ void print_most_numbers(void)
 		{
 			i++;
 		}
-		_putchar('i');
+		_putchar(i);
 	}
 	_putchar('\n');
 }
