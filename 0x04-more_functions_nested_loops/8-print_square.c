@@ -1,0 +1,31 @@
+#include "main.h"
+
+/**
+ * print_square - entry point
+ *
+ * @size: size of shape
+ *
+ * Return: shape
+*/
+
+void print_square(int size)
+{
+	int i;
+	int j;
+
+	if (size > 0)
+	{
+		for (j = 0; j < size; j++)
+		{
+			for (i = 0; i < j; i++)
+			{
+			_putchar('#');
+			}
+			_putchar('\n');
+		}
+	}
+	else
+	{
+		_putchar('\n');
+	}
+}
