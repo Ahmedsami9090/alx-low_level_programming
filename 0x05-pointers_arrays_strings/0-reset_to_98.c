@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reset_to_98: a function
+ * reset_to_98 - a function that convert input to fixed address
  *
  * @n: input
  *
