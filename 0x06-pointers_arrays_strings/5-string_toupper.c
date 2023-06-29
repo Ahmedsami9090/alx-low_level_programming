@@ -3,7 +3,7 @@
 /**
  * *string_toupper - entry
  *
- * Description: convert lower to upper
+ * @str: convert lower to upper
  *
  * Return: result
 */
