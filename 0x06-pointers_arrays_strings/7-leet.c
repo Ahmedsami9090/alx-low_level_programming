@@ -3,12 +3,12 @@
 /**
  * *leet - main
  *
- * @str: input
+ * @c: input
  *
  * Return: output
 */
 
-char *leet(char *str)
+char *leet(char *c)
 {
 	char *cp = c;
 	char key = {'A', 'E', 'O', 'T', 'L'};
