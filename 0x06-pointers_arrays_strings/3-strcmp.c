@@ -12,7 +12,7 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int equal;
+	int equal = 0;
 
 	while (*s1)
 	{
