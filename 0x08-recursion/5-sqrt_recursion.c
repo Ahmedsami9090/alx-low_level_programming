@@ -8,6 +8,8 @@
  * Return: sq root of input or -1 if invalid
 */
 
+int sq_no(int n, int val);
+
 int _sqrt_recursion(int n)
 {
 	return (sq_no(n, 1));
