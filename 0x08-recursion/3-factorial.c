@@ -18,7 +18,7 @@ int factorial(int n)
 	}
 	if (n == 1)
 	{
-		factorial(n) == 1;
+		factorial(0) == 1;
 	}
 	else
 	{
