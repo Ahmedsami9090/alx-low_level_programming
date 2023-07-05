@@ -15,10 +15,11 @@ int factorial(int n)
 	if (n < 0)
 	{
 		res = -1;
+		break;
 	}
 	if (n == 0)
 	{
-		 return (1);
+		return (1);
 	}
 	res = n * factorial(n - 1);
 	return (res);
