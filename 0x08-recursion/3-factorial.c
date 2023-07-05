@@ -16,13 +16,10 @@ int factorial(int n)
 	{
 		res = -1;
 	}
-	if (n == 1)
+	if (n == 0)
 	{
-		factorial(0) == 1;
+		 return (1);
 	}
-	else
-	{
-		res = n * factorial(n - 1);
-	}
+	res = n * factorial(n - 1);
 	return (res);
 }
