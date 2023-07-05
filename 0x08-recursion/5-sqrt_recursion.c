@@ -3,7 +3,11 @@
 /**
  * _sqrt_recursion - entry
  *
+ * sq_no - test function
+ *
  * @n: input
+ *
+ * @val: test value
  *
  * Return: sq root of input or -1 if invalid
 */
