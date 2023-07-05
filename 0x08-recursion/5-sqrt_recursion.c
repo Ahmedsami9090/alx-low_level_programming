@@ -3,11 +3,9 @@
 /**
  * _sqrt_recursion - entry
  *
- * sq_no - test function
- *
  * @n: input
  *
- * @val: test value
+ * @val: input
  *
  * Return: sq root of input or -1 if invalid
 */
@@ -18,6 +16,16 @@ int _sqrt_recursion(int n)
 {
 	return (sq_no(n, 1));
 }
+
+/**
+ * sq_no - test function
+ *
+ * @val: input
+ *
+ * @n: input
+ *
+ * Return: result
+*/
 
 int sq_no(int n, int val)
 {
