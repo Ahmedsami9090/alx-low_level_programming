@@ -3,9 +3,9 @@
 /**
  * main - entry point
  *
- * argc: counter
+ * @argc: counter of argument
  *
- * argv: value
+ * @argv: value of arguments
  *
  * Return: 0 success
 */
