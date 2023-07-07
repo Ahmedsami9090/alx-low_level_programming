@@ -13,22 +13,15 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 0;
 	int tot = 0;
-
+	char *c;
 
 	while (argc--)
 	{
-		if (*argv[i] >= '0' && *argv[i] <= '9')
-		{
-			tot = tot + atoi(argv[i]);
-		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
-		i++;
+		for (c = argv[argc]; *c; c++)
+			if (*c < '0' || *c > '9')
+				return (printf("Error\n", 1));
+		tot = tot + atoi(argv[argc]);
 	}
 	printf("%d\n", tot);
 	return (0);
