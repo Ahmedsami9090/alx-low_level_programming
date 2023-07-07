@@ -22,13 +22,13 @@ int main(int argc, char *argv[])
 		if (*argv[i] >= '0' && *argv[i] <= '9')
 		{
 			tot = tot + atoi(argv[i]);
-			i++;
 		}
 		else
 		{
 			printf("Error\n");
 			return (1);
 		}
+		i++;
 	}
 	printf("%d\n", tot);
 	return (0);
