@@ -1,7 +1,7 @@
 # include "main.h"
 # include <stdio.h>
 # include <stdlib.h>
-
+# include <limits.h>
 /**
  * *create_array - entry point
  *
@@ -18,7 +18,7 @@ char *create_array(unsigned int size, char c)
 	unsigned int count;
 
 	ar = malloc(sizeof(char) * size);
-	if (size == 0 || ar == malloc(INT_MAX))
+	if (size == 0 || ar == NULL)
 	{
 		return (NULL);
 	}
