@@ -17,18 +17,19 @@ char *create_array(unsigned int size, char c)
 	char *ar;
 	unsigned int count;
 
-	if (size == 0)
+	ar = malloc(sizeof(char) * size);
+	if (size == 0 || ar == malloc(INT_MAX))
 	{
 		return (NULL);
 	}
 	else
 	{
-		ar = malloc(sizeof(char) * size);
 		for (count = 0; count < size; count++)
 		{
 			ar[count] = c;
-		
+
 		}
-	}
+
 		return (ar);
+	}
 }
