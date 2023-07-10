@@ -15,7 +15,6 @@ char *_strdup(char *str)
 	int i;
 	int j;
 	char *s;
-	char *t;
 
 	if (str == 0)
 		return (NULL);
@@ -27,7 +26,7 @@ char *_strdup(char *str)
 		return (NULL);
 	for (j = 0; j < i; j++)
 	{
-		t[j] = s[i];
+		s[j] = str[i];
 	}
 	return (t);
 }
