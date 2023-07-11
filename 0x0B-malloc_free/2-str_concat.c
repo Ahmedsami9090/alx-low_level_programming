@@ -3,30 +3,53 @@
 # include <stdlib.h>
 
 /**
- * *str_concat - entry point
+ * _strlen - size function
  *
- * @s1: 1st string
+ * @s: input
  *
- * @s2: sec dtring
- *
- * Return: conc string
+ * Return: lenght of string
 */
 
+int _strlen(char *s)
+{
+	int size = 0;
+
+	for (; s[size] != '\0'; size++)
+		;
+	return (size);
+}
+/**
+ * str_concat - entry point
+ *
+ * @s1: first string
+ *
+ * @s2: sec string
+ *
+ * Return: concat strings
+*/
 char *str_concat(char *s1, char *s2)
 {
+	char *m;
+	int size1 = 0;
+	int size2 = 0;
 	int i;
-	int j;
-	char s;
-	char *str;
 
-	for (i = 0; s1[i] != '\0'; i++)
+	if (s1 == NULL)
+		s1 = '\0';
+	if (s2 == NULL)
+		s2 = '\0';
+	size1 = strlen(s1);
+	size2 = strlen(s2);
+	m = malloc((size1 + size2) * sizeof(char) + 1);
+	if (m == 0)
+		return (0);
+	for (i = 0; i < (size1 + size2); i++)
 	{
-		s = s1[i];
+		if (i < size1)
+			m[i] = s1[i];
+		else
+			m[i] = s2[i - size2];
 	}
-	for (j = 0; s2[j] != '\0'; j++)
-	{
-		s = s + s2[j];
-	}
-	str = malloc(sizeof(s) * 1);
-	return (str);
+	m[i] = '\0';
+	return (m);
 }
