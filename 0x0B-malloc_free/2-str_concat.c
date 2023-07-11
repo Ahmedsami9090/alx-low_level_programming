@@ -30,8 +30,8 @@ int _strlen(char *s)
 char *str_concat(char *s1, char *s2)
 {
 	char *m;
-	int size1 = 0;
-	int size2 = 0;
+	int size1;
+	int size2;
 	int i;
 
 	if (s1 == NULL)
