@@ -4,6 +4,7 @@
 /**
  * print_dog - entry point
  * @d: dog initialled
+ *
  * Return: void
 */
 
