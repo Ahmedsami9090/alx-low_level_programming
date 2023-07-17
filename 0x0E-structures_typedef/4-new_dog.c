@@ -45,7 +45,7 @@ char *_strcpy(char *dest, char *src)
  * @owner: owner
  * Return: create new dog
 */
-dog_t *new_dog(char *name, float age, char *owner)
+	dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 
