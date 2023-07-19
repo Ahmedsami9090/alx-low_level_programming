@@ -12,7 +12,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	int *l = array + size - 1;
 
-	if (array && siae && action)
+	if (array && size && action)
 		while (array <= l)
 			action(*array++);
 }
