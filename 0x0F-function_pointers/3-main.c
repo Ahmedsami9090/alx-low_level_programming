@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	op_f = get_op_func(argv[2]);
 	if (!op_f)
 		printf("error\n"), exit(99);
-	if (!b && ((argv[2] == '/' || argv[2] == '%') && b == 0))
+	if (!b && ((argv[2] == "/" || argv[2] == "%") && b == 0))
 		printf("error\n"), exit(100);
 	printf("%d\n", op_f(a, b));
 	return (0);
